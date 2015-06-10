@@ -33,12 +33,10 @@ info "begin install gocode"
 go get -u -v github.com/nsf/gocode
 
 info "begin install vim and plugins"
-# install vim
-yum install -y vim
 
 # install vim ide related pkg
 # python and boost used to install vim YCM plugin
-yum install -y python-devel boost-devel boost
+yum install -y vim python-devel boost-devel boost
 
 #install Vundle
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -64,6 +62,7 @@ if [ ! -f $cmake_dir ];then
 fi
 
 ~/cmake.sh --prefix=$cmake_dir --skip-license
+ln -s $cmake_dir/bin/cmake /usr/bin/cmake
 
 info "compile YCM."
 pushd ~/.vim/bundle/YouCompleteMe
