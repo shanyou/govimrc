@@ -1,5 +1,5 @@
-go vimrc template
-=================
+go vimrc env setup
+==================
 [Golang](https://github.com/golang/go) development IDE use [Vim](http://www.vim.org/). Default use [Vundle](https://github.com/gmarik/Vundle.vim) as plugin manager.
 ## Plugin list
 >* [vim-go](https://github.com/fatih/vim-go) Go (golang) support for Vim
