@@ -42,7 +42,8 @@ yum install -y vim python-devel boost-devel boost
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 #get template from git
-curl "https://raw.githubusercontent.com/shanyou/govimrc/master/vimrc_template" -o ~/.vimrc
+#curl "https://raw.githubusercontent.com/shanyou/govimrc/master/vimrc_template" -o ~/.vimrc
+cp vimrc_template ~/.vimrc
 
 info "copy color schema to vim"
 git clone https://github.com/fatih/molokai ~/molokai
