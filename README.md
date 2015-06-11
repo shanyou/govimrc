@@ -8,6 +8,8 @@ go vimrc template
 
 ## Usage
 ```shell
+git clone https://github.com/shanyou/govimrc.git
+cd govimrc
 ./gosetup.sh
 ```
 ## Reference
