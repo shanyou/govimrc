@@ -12,6 +12,10 @@ git clone https://github.com/shanyou/govimrc.git
 cd govimrc
 ./gosetup.sh
 ```
+or
+``` shell
+curl -L https://raw.githubusercontent.com/shanyou/govimrc/master/gosetup.sh | bash
+```
 ## Reference
 >* [https://github.com/golang/go/wiki/IDEsAndTextEditorPlugins](https://github.com/golang/go/wiki/IDEsAndTextEditorPlugins)
 >* [https://github.com/fatih/vim-go](https://github.com/fatih/vim-go)
