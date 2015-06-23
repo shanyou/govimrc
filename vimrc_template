@@ -27,12 +27,16 @@ filetype plugin indent on    " required
 syntax enable
 syntax on
 
-colorscheme molokai
+let mapleader=','
+set t_Co=256
 let g:molokai_original = 1
 let g:rehash256 = 1
+colorscheme molokai
 
 set termencoding=utf-8
 set encoding=utf8
+set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
+set cul
 
 set laststatus=2 
 set number
@@ -46,6 +50,20 @@ set expandtab
 set smarttab
 set autoindent
 set smartindent
+
+" nerdtree settings
+autocmd vimenter * NERDTree
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+map <silent> <F2> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" airline settings
+let g:airline_powerline_fonts = 0
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+
 
 " go language setting
 let g:go_fmt_autosave = 1
