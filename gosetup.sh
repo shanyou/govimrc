@@ -65,6 +65,7 @@ ln -s $cmake_dir/bin/cmake /usr/bin/cmake
 
 info "compile YCM."
 pushd ~/.vim/bundle/YouCompleteMe
+git submodule update --init --recursive
 ./install.sh --gocode-completer --system-boost
 popd
 
