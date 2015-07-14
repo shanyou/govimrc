@@ -52,7 +52,7 @@ rm -rf ~/molokai
 # install vim plugin
 vim +PluginInstall +qall
 
-info "install cmake"
+info "install cmake from source"
 curl "http://www.cmake.org/files/v3.3/cmake-3.3.0-rc1-Linux-x86_64.sh" -o ~/cmake.sh
 chmod +x cmake.sh
 cmake_dir=/opt/cmake
